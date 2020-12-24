@@ -1,5 +1,5 @@
 <?php
-	namespace Sunat;
+	namespace sunat;
 
 	class Curl
 	{
