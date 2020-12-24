@@ -1,47 +1,19 @@
 <?php
-	namespace response;
-	class obj
+	namespace Sunat;
+	class Obj
 	{
-		public function __construct( $value = array(), $is_assoc = true )
+		public function __construct( array $value = array() )
 		{
-			if ( $is_assoc && ( is_array ( $value ) || is_object( $value ) ) )
+			if ( is_array ( $value ) )
 			{
 				foreach($value as $i=>$v)
 				{
-					if( is_array ( $v ) )
-					{
-						if( $this->is_assoc( $v ) )
-							$this->{$i} = new obj( $v );
-						else
-							$this->{$i} = $this->create_array( $v );
-					}
-					else if( is_object( $v ) )
-					{
+					if(is_array($v))
 						$this->{$i} = new obj( $v );
-					}
 					else
 						$this->{$i} = $v;
 				}
 			}
-		}
-		function create_array( $value )
-		{
-			$response = array();
-			if ( is_array ( $value ) )
-			{
-				foreach( $value as $i=>$v )
-				{
-					if(is_array ( $v ) || is_object( $v ) )
-						$response[$i] = new obj( $v );
-					else
-						$response[$i] = $v;
-				}
-			}
-			return $response;
-		}
-		function is_assoc( $array )
-		{
-			return array_keys( $array ) !== range( 0, count($array) - 1 );
 		}
 		public function __set( $name, $value )
 		{
@@ -68,10 +40,12 @@
 		{
 			unset( $this->{$name} );
 		}
+		
 		public function __toString()
 		{
 			return "";
 		}
+		
 		/** Desde PHP 5.4.0 **/
 		public function json( $callback = null, $pretty = false )
 		{

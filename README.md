@@ -105,7 +105,7 @@ en caso de no haber encontrado resultados $search->success es false
 
 ### Instalacion mediante composer
 ```sh
-	composer require -o "jossmp/sunatphp"
+	composer require -o "nashvent/sunatphp"
 ```
 
 ```sh
@@ -120,15 +120,3 @@ en caso de no haber encontrado resultados $search->success es false
 - cURL
 - PHP 5.2.0 o superior
 ```
-
-
-Tambien puede interesarte muestra clase para buscar datos de personas mediante el DNI: [Ver repositorio]
-Donaciones: [PayPal]
-
-
-Copyright (C), 2018 Josue Mazco GNU General Public License 3 (http://www.gnu.org/licenses/)
-
-[Ver repositorio]: <https://github.com/JossMP/datos-peru/>
-[Ver demo]: <https://demo.peruanosenlinea.com/>
-[PayPal]: <https://www.paypal.me/JossMP>
-[Sunat Perú]: <http://www.sunat.gob.pe/cl-ti-itmrconsruc/jcrS00Alias>
