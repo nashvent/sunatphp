@@ -6,14 +6,7 @@
     "homepage" : "https://github.com/nashvent/sunatphp",
     "license": "MIT",
     "minimum-stability": "dev",
-    "optimize-autoloader": true,
     "authors": [
-        {
-            "name": "Josue Mazco Puma",
-            "email": "jossmp@gmail.com",
-            "homepage" : "https://peruanosenlinea.com/",
-            "role" : "Author"
-        },
         {
             "name": "Anibal Ventura Arocutipa",
             "email": "anibal.ventura@ucsp.edu.pe",
