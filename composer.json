@@ -1,6 +1,6 @@
 {
     "name": "nashvent/sunatphp",
-    "description": "Paquete para realizar consultas de RUC",
+    "description": "Paquete para realizar consultas de RUC - Bifurcación",
     "type": "library",
     "keywords": ["Sunat", "Peru", "PHP", "Consulta"],
     "homepage" : "https://github.com/nashvent/sunatphp",

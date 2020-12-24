@@ -1,23 +1,23 @@
 # SUNAT PERU
 Clase php para consultar los datos de la web de [Sunat Perú] desde php.
 
-Basado en [Repositorio original]
+Basado en [Repositorio original] sin mantenimiento.
 
 ### Instalacion mediante composer
 ```sh
-	composer require -o "nashvent/sunatphp"
+composer require -o "nashvent/sunatphp"
 ```
 
 ```sh
 <?php
-    require ("./vendor/autoload.php");
-    ...
+
+require ("./vendor/autoload.php");
+
 ?>
 ```
 
 ### Pre-requisitos
 ```sh
-- cURL
 - PHP 5.2.0 o superior
 ```
 
