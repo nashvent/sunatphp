@@ -1,7 +1,7 @@
 # SUNAT PERU
 Clase php para consultar los datos de la web de [Sunat Perú] desde php.
 
-Basado en [Repositorio original] sin mantenimiento.
+Fork de [Repositorio original].
 
 ### Instalacion mediante composer
 ```sh
