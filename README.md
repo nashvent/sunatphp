@@ -5,15 +5,7 @@ Basado en [Repositorio original] sin mantenimiento.
 
 ### Instalacion mediante composer
 ```sh
-composer require -o "nashvent/sunatphp"
-```
-
-```sh
-<?php
-
-require ("./vendor/autoload.php");
-
-?>
+composer require nashvent/sunatphp
 ```
 
 ### Pre-requisitos

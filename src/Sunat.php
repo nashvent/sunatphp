@@ -29,7 +29,7 @@
 		{
 			if( strlen($ruc)!=8 && strlen($ruc)!=11 && !is_numeric($ruc) )
 			{
-				$response = new \response\obj(array(
+				$response = new Obj(array(
 					'success' => false,
 					'message' => 'Formato RUC/DNI no validos.'
 				));
@@ -37,7 +37,7 @@
 			}
 			if( strlen( $ruc )==11 && is_numeric($ruc) && !$this->valid( $ruc ) )
 			{
-				$response = new \response\obj(array(
+				$response = new Obj(array(
 					'success' => false,
 					'message' => 'RUC no valido'
 				));
@@ -135,7 +135,7 @@
 						));
 						return $response;
 					}
-					$response = new \response\obj(array(
+					$response = new Obj(array(
 						'success' 	=> 	false,
 						'message' 	=> 	'No se encontraron datos suficientes.'
 					));
@@ -143,14 +143,14 @@
 				}
 				else
 				{
-					$response = new \response\obj(array(
+					$response = new Obj(array(
 						'success' 	=> 	false,
 						'message' 	=> 	'No se pudo conectar a sunat.'
 					));
 					return $response;
 				}
 			}
-			$response = new \response\obj(array(
+			$response = new Obj(array(
 				'success' 	=> 	false,
 				'message' 	=> 	'No se pudo conectar a sunat.'
 			));
